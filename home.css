@@ -1,0 +1,122 @@
+.main {
+    width: 82%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.nba-img {
+    position: relative;
+    height: 20px;
+    width: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.caption-img {
+
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+.heading {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.details {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.scroll-parent {
+    position: relative;
+    width: 100vw;
+    height: 2rem;
+    overflow-x: hidden;
+  }
+
+  .scroll-element {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    animation: primary 15s linear infinite;
+  }
+
+  .primary {
+    animation: primary 15s linear infinite;
+  }
+
+  .primary:hover {
+    animation-play-state: paused;
+  }
+
+  .secondary {
+    animation: secondary 15s linear infinite;
+  }
+  
+  .secondary:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes primary {
+    from {
+      left: 85%;
+    }
+    to {
+      left: -85%;
+    }
+  }
+  
+  @keyframes secondary {
+    from {
+      left: 150%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    /*background-color: #f1f1f1;*/
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  .tab button:hover {
+    text-decoration: underline;
+  }
+  
+  /*
+  Create an active/current tablink class
+  .tab button.active {
+    
+  }
+  */
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f1f1f1;
+  }
